@@ -1,0 +1,9 @@
+body {
+            background-color: darkseagreen;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+        h1 {color: darkgreen;
+        background-color: rgba(109, 190, 106, 0.616);}
+        h2 {color: darkslategray;}
+        p {text-align: justify; background-color: rgba(0, 0, 0, 0.062); color: darkcyan; font-family:Verdana, Geneva, Tahoma, sans-seri}

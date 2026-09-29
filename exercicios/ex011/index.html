@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+      <source media="(max-width: 750px)" srcset="imagens/foto_p.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="imagens/foto_m.png" type="image/png">
+      <img src="imagens/foto_g.png" alt="imamgem flexivel">  
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML</p>
+    
+
+    <audio preload="metadata" autoplay controls> 
+        <source src="midia/celeste.mp3" type="audio/mpeg">
+        <source src="midia/celeste.ogg" type="audio/ogg">
+        <source src="midia/celeste.wav" type="audio/wav">
+        <p>Infelizmente o seu navegado não consegue reproduzir esse audio.</p>
+        <p>Clique<a href="midia/celeste.mp3"> aqui para baixar.</a></p>
+    </audio>
+
+    <p>Clique<a href="midia/celeste.mp3" download="midia/celeste.mp3" type="audio/mpeg"> aqui para baixar.</a></p>
+    <source src="midia/celeste.mp3" type="audio/mpeg">
+    <br>
+    <a href="midia/celeste.mp3" download>Clique aqui para baixar</a>
+
+    
+
+</body>
+</html>

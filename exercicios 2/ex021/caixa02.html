@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(219, 105, 105);
+            padding: 3px;
+            box-shadow: 3px 4px 12px 0px #0000006b;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px ;
+        }
+
+        nav > a:hover {
+            color: burlywood;
+        }
+
+        main {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.315);
+        }
+        article {
+            background-color: rgba(255, 246, 125, 0.452);
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color:rgba(141, 94, 5, 0.308);       
+        }
+
+        footer {
+            background-color: rgb(78, 26, 2);
+            color: wheat;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0%;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: rgb(253, 73, 73);     
+            border-radius: 50%; 
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>O conceito da História</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Importancia do amor em Caindo em Sonhos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsum optio tenetur nulla voluptates earum obcaecati possimus minus qui maxime ab a alias, cupiditate numquam iste, beatae doloribus officiis cumque?</p>
+               <aside>
+                    <p>Artigo escrito por Fells Nohara</p>
+               </aside> 
+            </article> 
+            <article>
+                
+            </article>              
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Guilherme Alves</p>
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
