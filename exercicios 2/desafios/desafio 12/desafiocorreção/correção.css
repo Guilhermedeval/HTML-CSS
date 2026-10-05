@@ -2,12 +2,25 @@
 
 *{
     margin: 0px;
+    font-size: 1em;
     padding: 0px;
+}
+
+@font-face {
+    font-family: monic;
+    src: url(fontes/monic.ttf) format(truetype);
+}
+
+:root {
+    --fonte1:'Times New Roman', Times, serif;
+    --fonte2: 'monic', Times, serif;
+    --fonte3: Arial, Helvetica, sans-serif;
 }
 
 html, body {
     background-color: darkgrey;
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -17,8 +30,11 @@ header {
 }
 
 header > h1 {
+    font-family: var(--fonte2);
     padding-top: 50px;
     font-variant: small-caps;
+    font-weight:lighter;
+    font-size: 8vw;
 }
 
 header > p {
@@ -40,6 +56,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
 }
 
 .normal {
@@ -52,9 +70,10 @@ section {
     color: #e4d0be;
 }
 
-.imagem > p {
+section.imagem > p {
     background-color: #0d000067;
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 #corazul {
