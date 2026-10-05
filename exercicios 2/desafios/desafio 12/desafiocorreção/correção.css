@@ -45,6 +45,7 @@ a {
     color: wheat;
     text-decoration: none;
     font-weight: bolder;
+    font-family: var(--fonte3);
 }
 
 a:hover {
@@ -60,6 +61,10 @@ section {
     font-size: 3.5vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 .normal {
     background-color: #40120E;
     color: #8C7E72;;
@@ -68,16 +73,34 @@ section {
 .imagem {
     background-color: rgb(44, 44, 44);
     color: #e4d0be;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.651);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: #0d000067;
+    background-color: #0d000096;
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
 }
 
 #corazul {
     background-color: #152340;
+}
+
+#img01 {
+    background-image: url(imagens/fells.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#img02 {
+    background-image: url(imagens/joyce.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
 
 footer {
@@ -85,4 +108,14 @@ footer {
     color: #e4d0be;
     text-align: center;
     padding: 10px;
+}
+
+footer > p {
+    font-size: 1em;
+}
+
+@media (max-width: 600px) {
+    footer > p {
+        font-size: 10px;
+    }
 }
