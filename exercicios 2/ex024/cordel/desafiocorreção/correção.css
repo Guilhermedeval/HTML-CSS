@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    font-size: 1em;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: monic;
+    src: url(fontes/monic.ttf) format(truetype);
+}
+
+:root {
+    --fonte1:'Times New Roman', Times, serif;
+    --fonte2: 'monic', Times, serif;
+    --fonte3: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    background-color: darkgrey;
+    min-height: 100vh;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: #593912;
+    color: wheat;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte2);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-weight:lighter;
+    font-size: 8vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: var(--fonte3);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section { 
+    padding-top: 10vh;      
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.normal {
+    background-color: #40120E;
+    color: #8C7E72;;
+}
+
+.imagem {
+    background-color: rgb(44, 44, 44);
+    color: #e4d0be;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.651);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: #0d000096;
+    display: inline-block;
+    padding: 10px;
+    text-shadow: 1px 1px 0px black;
+}
+
+#corazul {
+    background-color: #152340;
+}
+
+#img01 {
+    background-image: url(imagens/fells.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#img02 {
+    background-image: url(imagens/joyce.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+footer {
+    background-color: #0D0000;
+    color: #e4d0be;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > p {
+    font-size: 1em;
+}
+
+@media (max-width: 600px) {
+    footer > p {
+        font-size: 10px;
+    }
+}

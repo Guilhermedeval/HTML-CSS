@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@font-face {
+    font-family: lostar;
+    src: url(fontes/Lostar.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: rostock;
+    src: url(fontes/Rostock.ttf) format(truetype);
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    background-color: #593912;
+    color: wheat;
+    box-shadow: 1px 4px 20px 0px rgba(0, 0, 0, 0.356);
+    position: relative;
+    
+    
+}
+
+header > h1 {
+    font-family: lostar;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 8vw;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+
+    
+}
+
+header > p {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: clamp(14px, 5vw, 25px);
+    padding-bottom: 40px;
+    padding-top: 11px;
+    margin: auto;
+    color: wheat;
+    padding-right: 16px;
+    
+}
+
+.normal {
+    background-color: #40120E;
+    box-shadow: 1px 1px 1px black;
+}
+
+.normal > p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(18px, 5vw, 50px);
+    line-height: 2;
+    justify-content:left;
+    padding-left: 25px;
+    padding-top: 85px;
+    padding-bottom: 140px;
+    color: #8C7E72;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(18px, 5vw, 50px);
+    line-height: 2;
+    justify-content:left;
+    padding-left: 25px;
+    padding-top: 85px;
+    padding-bottom: 140px;
+    color: #e4d0be;
+    
+}
+
+.fundo > p {
+    background-color: rgba(0, 0, 0, 0.733);
+    display: inline-block;
+    padding: 5px;
+    border-radius: 3%;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.fundo {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.473);
+    box-shadow: inset 9px 5px 9px 1px rgba(0, 0, 0, 0.473);
+    padding-top: 85px;
+    padding-bottom: 140px;
+    padding-left: 25px;
+    position: relative;
+}
+
+#img1 {
+    background-image: url(imagens/fells.png);
+    background-position: 50% 25%;
+}
+
+@media (max-width: 1000px) {
+    .fundo {
+        background-size: 170% auto;
+        background-position: center top;
+        background-attachment: fixed;
+    }
+}
+
+#img2 {
+    background-image: url(imagens/joycepensativa.png);
+    background-position: 50% 25%;
+}
+
+#fotpa {
+    background-color: #0D0000;
+    color: #e4d0be;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    font-size: 16px;
+    
+}
+
+@media (max-width: 600px) {
+    #fotpa {
+        font-size: 13px;
+    }
+}
+
+a {
+    color: #e4d0be;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    
+    
+    
